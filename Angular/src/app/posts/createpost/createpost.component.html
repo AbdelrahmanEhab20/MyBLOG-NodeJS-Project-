@@ -1,0 +1,79 @@
+<!-- <div class="container col-sm-12 mb-3">
+    <div class="media  px-3">
+        <div class="media-body">
+            <form [formGroup]="this.posts.addPost">
+                <input type="text" placeholder="TITLE" formControlName="title">
+                <form formArrayName="tags" class="w-50">
+                    <label for="item w-100">
+                        tag :
+                        <input type="phone" formControlName="tag" *ngFor="let item of posts.tags.controls;let i=index"
+                            [formControlName]="i" class="form-control">
+                    </label>
+                    <br>
+                    <button class="btn btn-warning my-3" (click)="posts.addTag()">add more</button>
+                </form>
+                <textarea name="" id="" cols="30" rows="5" class="w-100 p-1" style="resize: none;"
+                    formControlName="body"></textarea>
+            </form>
+        </div>
+    </div>
+    <div class="d-flex px-3 justify-content-end">
+        <button class="btn-primary btn" (click)="post()"> POST ! </button>
+    </div>
+</div> -->
+
+<div class="container m-3 p-3 d-flex flex-column align-items-center border border-4">
+    <h2 class="text-cebter font-monospace border border-5 my-3">
+        ADD Your New Post
+    </h2>
+
+    <!--input for Tittle   -->
+
+    <label style="font-size:18px; font-weight: bolder;" class="form-label" for="form3Example3">Title</label>
+    <input #title type="email" id="form3Example3" class="form-control form-control-lg" placeholder="Enter Your Title" />
+
+    <!--text area for Tittle   -->
+    <label style="font-size:18px; font-weight: bolder;">Body Of The Post :</label>
+    <textarea #body class="form-control" rows="20" cols="30" ></textarea>
+
+    <button type="button" class="btn btn-success my-3" (click)="addPOST(title.value,body.value)">
+        Add Post
+    </button>
+</div>
+<!-- <div class="container border border-4">
+    <div class="row">
+
+        <div class="col-md-8 col-md-offset-2">
+
+            <h1>Create post</h1>
+
+            <form action="" method="POST">
+
+                <div class="form-group">
+                    <label for="title">Title <span class="require">*</span></label>
+                    <input type="text" class="form-control" name="title" />
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea rows="5" class="form-control" name="description"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Tegs</label>
+                    <textarea rows="3" class="form-control" name="Tags"></textarea>
+                </div>
+
+                <br>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">
+                        Create
+                    </button>
+                    <br><br>
+                    <button class="btn btn-primary">
+                        Cancel
+                    </button>
+                </div>
+                <br>
+            </form>
+        </div> -->

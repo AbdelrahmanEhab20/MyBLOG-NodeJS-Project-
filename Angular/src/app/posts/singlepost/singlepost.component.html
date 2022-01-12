@@ -1,0 +1,66 @@
+<!-- Page Header -->
+<!-- <header class="container-fluid gx-5 px-lg-5"
+    style="background-image: url('../../../assets/home.jpg');background-size: cover;height: 80vh;">
+    <div class="d-flex h-100 justify-content-center">
+        <div class="d-flex h-100 align-items-center">
+            <h1 style="font-weight: bolder;font-size: 50px;color: white;" class=" col-sm-12 d-block text-center">
+                My Blog Site</h1>
+        </div>
+    </div>
+</header>
+<hr> -->
+<!-- Main Content-->
+
+<!-- <div style="margin: 25px; color: black;" class="container-fluiid px-5 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8">
+        
+            <div class="post-preview">
+                <a style="color: rgb(38, 44, 34);" class="text-decoration-none" >
+                    <h2 style="font-weight: bolder;font-size: 30px;color: rgb(29, 27, 27);" class="fs-2">{{post.title}}
+                    </h2>
+                    <p style="font-size:20px;">{{post.body|maxLength:200}}</p>
+                </a>
+                
+                <button class="btn btn-success p-2 m-2" type="button">Update Post </button>
+                <button class="btn btn-danger p-2 m-2" type="button">Delete Post </button>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- Page Header -->
+<!-- <header class="container-fluid gx-5 px-lg-5"
+    style="background-image: url('../../../assets/home.jpg');background-size: cover;height: 80vh;">
+    <div class="d-flex h-100 justify-content-center">
+        <div class="d-flex h-100 align-items-center">
+            <h1 style="font-weight: bolder;font-size: 50px;color: white;" class=" col-sm-12 d-block text-center">
+                My Blog Site</h1>
+        </div>
+    </div>
+</header>
+<hr> -->
+
+<!-- Main Content-->
+<div style="margin: 25px; color: black;" class="container-fluiid px-5 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <!-- Post preview-->
+            <div class="post-preview">
+                <a style="color: rgb(38, 44, 34);" class="text-decoration-none">
+                    <h2 style="font-weight: bolder;font-size: 30px;color: rgb(29, 27, 27);" class="fs-2">{{post.title}}
+                    </h2>
+                    <p style="font-size:20px;">{{post.body}}</p>
+                </a>
+                <p style="color: rgb(49, 44, 44); font-weight: 650;">
+                    Posted by <a style="color:rgb(161, 17, 157);" >{{post.author.username}}</a> on <span
+                        style="color:rgb(17, 107, 62);">{{post.createdAt|date:'long'}}</span>
+                </p>
+                <button class="btn btn-success p-2 m-2" type="button" (click)="updateBTN()">Update Post </button>
+                <button class="btn btn-danger p-2 m-2" type="button" (click)="delete(myID)">Delete Post </button>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>

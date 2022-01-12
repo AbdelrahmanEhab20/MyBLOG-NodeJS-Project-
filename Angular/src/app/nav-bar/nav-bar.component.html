@@ -1,0 +1,20 @@
+<!-- Nav Bar-->
+<nav style="color: black; font-weight: bolder;" class="navbar bg-success navbar-expand-lg navbar-light">
+    <!-- fixed-top -->
+    <div class="container gx-4 px-lg-5">
+        <a class="navbar-brand" routerLink="/home">Blog Website</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto  py-2 py-lg-0" style="color: black; font-weight: bolder;">
+                <li><a class="nav-link px-lg-3 py-3 py-lg-2" (click)=" GoCreate()">Create Posts</a></li>
+                <li><a class="nav-link px-lg-3 py-3 py-lg-2" routerLink="/home">Posts</a></li>
+                <li><a class="nav-link px-lg-3 py-3 py-lg-2" [hidden]="isLoggedIN()" routerLink="/login">LogIn</a></li>
+                <li><a class="nav-link px-lg-3 py-3 py-lg-2" (click)="logout()">LogOut</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
